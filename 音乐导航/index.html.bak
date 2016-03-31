@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-cn">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>音乐导航</title>
+  <style type="text/css">
+  *{margin:0px;padding:0px;font-size:12px;font-family:"微软雅黑";}
+  li{list-style:none;}
+	nav{width:1200px;height:54px;position:absolute;left:0px;right:0px;margin:0 auto;top:200px;background:url(images/bg1.jpg) no-repeat;}
+	nav ul{margin-left:300px;width:700px;display:-webkit-box;}
+	nav ul li{height:54px;-webkit-box-flex:1;position:relative;cursor:pointer;border-right:1px gray solid;}
+	nav ul li span{display:block;width:100%;height:0px;position:absolute;left:0px;bottom:0px;transition:all .3s linear;}
+	nav ul li:nth-child(1) span{background:#ff99ff;}
+	nav ul li:nth-child(2) span{background:#ff0000;}
+	nav ul li:nth-child(3) span{background:#66ff00;}
+	nav ul li:nth-child(4) span{background:#3333ff;}
+	nav ul li:nth-child(5) span{background:#cc0000;}
+	nav ul li:nth-child(6) span{background:#66ffff;}
+	nav ul li:nth-child(7) span{background:#ccff00;}
+	nav ul li:hover .show{height:54px;}
+  </style>
+ </head>
+ <body>
+		<nav>
+			<ul>
+				<li msrc="mp3/do.mp3"><span class="show"></span></li>
+				<li msrc="mp3/re.mp3"><span class="show"></span></li>
+				<li msrc="mp3/mi.mp3"><span class="show"></span></li>
+				<li msrc="mp3/fa.mp3"><span class="show"></span></li>
+				<li msrc="mp3/sol.mp3"><span class="show"></span></li>
+				<li msrc="mp3/la.mp3"><span class="show"></span></li>
+				<li msrc="mp3/si.mp3"><span class="show"></span></li>
+			</ul>
+		</nav>
+		<audio src="mp3/do.mp3"></audio>
+		<script style="text/javascript" src="js/jquery-2.1.1.js"></script>
+
+		<script style="text/javascript">
+				$(function(){
+				
+					$("nav ul li").hover(function(){
+						
+						var src=$(this).attr("msrc");
+						
+						$("audio").attr("src",src);
+						
+						$("audio").get(0).play();
+					},function(){
+					
+					
+					})
+
+					function get$(id){
+					
+						return document.getElementById(id);
+					}
+				})
+		
+		</script>
+ </body>
+</html>

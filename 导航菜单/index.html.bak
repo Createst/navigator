@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-cn">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  *{margin:0px;padding:0px;font-size:12px;font-family:"微软雅黑";}
+	html,body{height:100%;overflow:hidden;}
+	/*背景样式*/
+	.container{width:100%;height:100%;min-width:725px;background:url(images/1.jpg) no-repeat;background-size:cover;position:relative;}
+
+	nav{width:60%;height:30px;background:white;position:absolute;left:0px;right:0px;margin:0 auto;top:150px;box-shadow:1px 1px 2px 0px white;}
+	nav > ul{height:100%;display:-webkit-box;}
+	nav > ul  > li{height:30px;list-style-type:none;line-height:30px;text-align:center;-webkit-box-flex:1;}
+	nav  > ul  > li >  a{display:block;text-decoration:none;color:black;}
+	nav >  ul  > li  > a:hover{background:gray;color:white;}
+
+	.submenu li{list-style-type:none;line-height:30px;text-align:center;border:1px solid white;transition:all 1s;margin:2px 0px;-webkit-transform:rotateY(180deg);opacity:0;}
+	.submenu li:nth-child(1){transition-delay:200ms;}
+	.submenu li:nth-child(2){transition-delay:150ms;}
+	.submenu li:nth-child(3){transition-delay:100ms;}
+	.submenu li:nth-child(4){transition-delay:50ms;}
+	.submenu li:nth-child(5){transition-delay:0ms;}
+
+	.submenu li a{display:block;text-decoration:none;color:black;}
+	.submenu li a:hover{color:red;box-shadow:0px 0px 3px 3px white;}
+
+	nav >  ul  > li:hover .submenu li{-webkit-transform:rotateY(0deg);opacity:1;}
+	nav >  ul  > li:hover .submenu li:nth-child(1){transition-delay:0ms;}
+	nav >  ul  > li:hover .submenu li:nth-child(2){transition-delay:50ms;}
+	nav >  ul  > li:hover .submenu li:nth-child(3){transition-delay:100ms;}
+	nav >  ul  > li:hover .submenu li:nth-child(4){transition-delay:150ms;}
+	nav >  ul  > li:hover .submenu li:nth-child(5){transition-delay:200ms;}
+	
+  </style>
+ </head>
+ <body>
+	<div class="container">
+	<nav>
+		<ul>
+			<li><a href="#">阿里巴巴</a>
+				<ul class="submenu">
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+				</ul>
+			</li>
+			<li><a href="#">阿里巴巴</a>
+				<ul class="submenu">
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+				</ul>
+			</li>
+			<li><a href="#">阿里巴巴</a>
+				<ul class="submenu">
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+				</ul>
+			</li>
+			<li><a href="#">阿里巴巴</a>
+				<ul class="submenu">
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+				</ul>
+			</li>
+			<li><a href="#">阿里巴巴</a>
+				<ul class="submenu">
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+				</ul>
+			</li>
+			<li><a href="#">阿里巴巴</a>
+				<ul class="submenu">
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+					<li><a href="#">阿里巴巴</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</nav>
+	
+	</div>
+
+	
+ </body>
+</html>
